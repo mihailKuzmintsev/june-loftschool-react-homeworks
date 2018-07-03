@@ -3,9 +3,7 @@ import './Budget.css';
 import { connect } from 'react-redux';
 
 export const Budget = props => {
-  console.log(props);
   const { profit, farmExpanse, deliveryExpanse, marketExpanse } = props.budget;
-  console.log(profit, farmExpanse, deliveryExpanse, marketExpanse);
 
   const total = profit - farmExpanse - marketExpanse - deliveryExpanse;
 
